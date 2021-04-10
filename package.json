@@ -1,0 +1,26 @@
+{
+  "name": "audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@suldashi/lame": "^1.2.5",
+    "chrono-node": "^2.2.6",
+    "city-country-timezone": "^1.0.3",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "moment": "^2.29.1",
+    "node-witai-speech": "^1.0.2",
+    "request": "^2.88.2",
+    "socket.io": "^4.0.1",
+    "socket.io-stream": "^0.9.1",
+    "speech-recorder": "^1.2.5",
+    "underscore": "^1.12.1",
+    "words-to-numbers": "^1.5.1"
+  }
+}

@@ -87,3 +87,20 @@ path {
         font-size: 18px;
     }
 }
+
+.logger {
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    flex-direction: column;
+    overflow: auto;
+    position: absolute;
+}
+.logger p {
+    margin:0;
+}

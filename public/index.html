@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
     <script src="VAD.js"></script>
+    <script src="audio.js"></script>
     <script src="demo.js"></script>
 </head>
 <body>
@@ -31,12 +32,13 @@
         <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)" mask="url(#mask)"></rect>
     </svg>
 
-    <h1 class="main-text">Please allow the use of your microphone.</h1>
+    <h1 class="main-text"></h1>
 
     <h1 class="sub-text"></h1>
 
     <div class="button-container"><button id="button" class="green-button"><span class="fa fa-play"></span>   Start Listen</button></div>
 
+    <div class="logger"></div>
 </body>
 
 </html>

@@ -31,9 +31,9 @@ io.of('/').on('connection', function(socket) {
   socket.on('stream', async function(data) {
     // console.log(data.length)
     // write_output_mp3(data) // for debugging purposes
-    let out = await transcribe_witai(data)
-    if (out.length)
-      socket.emit('text', {raw:out, nlp:nlp(out)})
+    const {buffer, id} = data;
+    let out = await transcribe_witai(buffer)
+    socket.emit('text', {raw:out, nlp:nlp(out), id})
   });
 });
 

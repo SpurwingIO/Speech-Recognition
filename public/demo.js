@@ -31,10 +31,15 @@ $(document).ready(() => {
             console.log(data)
             $('#tid'+data.id).text(JSON.stringify(data))
         })
-        spa.initVAD(()=>addLog('recording'), (buffer) => {
-            socket.emit('stream', {buffer, id:transcribeID})
-            addLog('<p>processing... <span id="tid'+transcribeID+'"></span></p>')
-            ++transcribeID;
+        spa.startVAD(()=>addLog('recording'), (buffer, duration) => {
+            duration = (Math.round(duration*100)/100);
+            if (duration <= 1.5 || duration >= 20.0) {
+                addLog('<p>skip processing, audio too '+(duration >= 20 ? 'long':'short')+' ('+duration+' sec)</p>');
+            } else {
+                socket.emit('stream', {buffer, id:transcribeID})
+                addLog('<p>processing ('+duration+' sec)... <span id="tid'+transcribeID+'"></span></p>')
+                ++transcribeID;
+            }
         })
 
         drawSpectro(analyser, frequencyArray);

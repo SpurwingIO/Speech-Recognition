@@ -63,9 +63,8 @@ async function write_output_mp3(buffer) {
 const { wordsToNumbers } = require('words-to-numbers');
 const chrono = require('chrono-node');
 function nlp(text){
-  return chrono.parseDate(wordsToNumbers(text),
-    // moment().utcOffset((new Date()).getTimezoneOffset())
-  );
+  text = wordsToNumbers(text)
+  return chrono.parseDate(text);
 }
 
 // WitAI

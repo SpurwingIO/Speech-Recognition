@@ -5,7 +5,14 @@ const { Readable } = require('stream');
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
-const io = require('socket.io')(http, { path: "/Spurwing/audio/socket.io"});
+const io = require('socket.io')(http, { 
+  path: "/Spurwing/audio/socket.io",
+  cors: {
+    origin: "*"
+  },
+});
+const cors = require('cors');
+app.use(cors())
 
 const port = 8002;
 const host = '0.0.0.0'; // or localhost
@@ -29,7 +36,7 @@ app.use(function(err, req, res, next) {
 
 io.of('/').on('connection', function(socket) {
   socket.on('stream', async function(data) {
-    // console.log(data.length)
+    // console.log(data.buffer.length)
     // write_output_mp3(data) // for debugging purposes
     const {buffer, id} = data;
     let out = await transcribe_witai(buffer)
@@ -38,9 +45,9 @@ io.of('/').on('connection', function(socket) {
 });
 
 io.on('connection', (socket) => {
-  console.log('connection');
+  // console.log('connection');
   socket.on('disconnect', () => {
-    console.log('disconnect');
+    // console.log('disconnect');
   });
 });
 

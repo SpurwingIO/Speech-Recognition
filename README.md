@@ -34,8 +34,8 @@ Use the code snippets below to easily integrate it in your web application.
 `index.html:`
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
-<script src="VAD.js"></script>     <!-- Required: VAD algorithm -->
-<script src="audio.js"></script>   <!-- Required: Speech Recognition Library -->
+<script src="https://spurwing.github.io/Speech-Recognition/public/VAD.js"></script>     <!-- Required: VAD algorithm -->
+<script src="https://spurwing.github.io/Speech-Recognition/public/audio.js"></script>   <!-- Required: Speech Recognition Library -->
 
 <script src="demo.js"></script>    <!-- Your implementation -->
 ```

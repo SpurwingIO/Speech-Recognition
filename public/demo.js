@@ -24,7 +24,7 @@ $(document).ready(() => {
             $('#mask').append(path);
         }
 
-        let socket = io(SpurwingWSURL, {
+        let socket = io('localhost:8002', {
           path: "/Spurwing/audio/socket.io"
         });
         socket.on('text', data => {

@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http, { 
-  path: "/Spurwing/audio/socket.io",
+  path: "/audio/socket.io",
   cors: {
     origin: "*"
   },
@@ -20,7 +20,7 @@ http.listen(port, host, () => {
   console.log('listening on *:' + port);
 });
 
-app.use('/Spurwing/audio/', express.static('public'))
+app.use('/audio/', express.static('public'))
 
 app.use(function(req, res) {
   console.error(404, req.url)

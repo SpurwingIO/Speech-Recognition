@@ -24,7 +24,7 @@ $(document).ready(() => {
             $('#mask').append(path);
         }
 
-        let socket = io(SpurwingWSURL, {
+        let socket = io('', { // eg: localhost:8002
           path: "/audio/socket.io"
         });
         socket.on('text', data => {
@@ -107,7 +107,7 @@ $(document).ready(() => {
                 processStream(stream);
             }).catch((err) => {
                 $('.main-text').html("You must allow your microphone.");
-                console.log(error);
+                console.log(err);
             });
         }
     });

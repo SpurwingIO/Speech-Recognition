@@ -1,7 +1,7 @@
 # Speech Recognition
 This is an easy and simple Speech Recognition library for adding Voice Commands and Controls to all your applications. Whether you are building web apps, native apps or desktop apps, this technology can be integrated into any system with an internet connection. 
 
-![image](https://user-images.githubusercontent.com/9488406/119051403-676ead80-b9c3-11eb-9aa5-4e8d3ecbc573.png)
+![image](https://user-images.githubusercontent.com/9488406/119051824-f7145c00-b9c3-11eb-9533-87c62ddd67ac.png)
 
 This code contains the server-client library and a demo implementation of Speech Recognition in the browser. It works on any device that uses a modern up-to-date web browser (FireFox or Chrome recommended).
 

@@ -1,5 +1,5 @@
 # Speech Recognition
-This is an easy and simple Speech Recognition library for adding Voice Commands and Controls to all your applications. Whether you are building web apps, native apps or desktop apps, this technology can be integrated into any system with an internet connection. 
+This is an easy and simple Speech Recognition library for adding Voice Commands and Controls to all your applications. Whether you are building web apps, native apps or desktop apps, this technology can be integrated into any system with an internet connection. Learn more about the [Spurwing Scheduling API](https://github.com/Spurwing/Appointment-Scheduling-API).
 
 ![image](https://user-images.githubusercontent.com/9488406/119051824-f7145c00-b9c3-11eb-9533-87c62ddd67ac.png)
 

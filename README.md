@@ -1,5 +1,5 @@
 # Speech Recognition
-This is an easy and simple Speech Recognition library for adding Voice Commands and Controls to all your applications. Whether you are building web apps, native apps or desktop apps, this technology can be integrated into any system with an internet connection. Learn more about the [Spurwing Scheduling API](https://github.com/Spurwing/Appointment-Scheduling-API).
+This is an easy and simple Speech Recognition library for adding Voice Commands and Controls to all your applications. Whether you are building web apps, native apps or desktop apps, this technology can be integrated into any system with an internet connection. Learn more about the [Spurwing Scheduling API](https://github.com/Spurwingio/Appointment-Scheduling-API).
 
 ![image](https://user-images.githubusercontent.com/9488406/119051824-f7145c00-b9c3-11eb-9533-87c62ddd67ac.png)
 
@@ -36,8 +36,8 @@ Use the code snippets below to easily integrate it in your web application.
 `index.html:`
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
-<script src="https://spurwing.github.io/Speech-Recognition/public/VAD.js"></script>     <!-- Required: VAD algorithm -->
-<script src="https://spurwing.github.io/Speech-Recognition/public/audio.js"></script>   <!-- Required: Speech Recognition Library -->
+<script src="https://spurwingio.github.io/Speech-Recognition/public/VAD.js"></script>     <!-- Required: VAD algorithm -->
+<script src="https://spurwingio.github.io/Speech-Recognition/public/audio.js"></script>   <!-- Required: Speech Recognition Library -->
 
 <script src="demo.js"></script>    <!-- Your implementation -->
 ```
